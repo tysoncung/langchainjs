@@ -270,8 +270,8 @@ importers:
         specifier: ^8
         version: 8.18.1
       '@upstash/redis':
-        specifier: ^1.36.2
-        version: 1.36.2
+        specifier: ^1.37.0
+        version: 1.37.0
       '@upstash/vector':
         specifier: ^1.2.1
         version: 1.2.2
@@ -1138,10 +1138,10 @@ importers:
         version: 8.18.1
       '@upstash/ratelimit':
         specifier: ^2.0.8
-        version: 2.0.8(@upstash/redis@1.36.2)
+        version: 2.0.8(@upstash/redis@1.37.0)
       '@upstash/redis':
-        specifier: ^1.36.2
-        version: 1.36.2
+        specifier: ^1.37.0
+        version: 1.37.0
       '@upstash/vector':
         specifier: ^1.2.1
         version: 1.2.2
@@ -1171,7 +1171,7 @@ importers:
         version: 4.26.1(bufferutil@4.1.0)
       azion:
         specifier: ^3.1.2
-        version: 3.1.2(@babel/core@7.29.0)(@fastly/js-compute@3.39.2(typescript@5.8.3))(@swc/core@1.15.18(@swc/helpers@0.5.18))
+        version: 3.1.2(@babel/core@7.29.0)(@fastly/js-compute@3.39.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)(typescript@5.8.3))(@swc/core@1.15.18(@swc/helpers@0.5.18))
       better-sqlite3:
         specifier: 12.6.2
         version: 12.6.2
@@ -1811,7 +1811,7 @@ importers:
     dependencies:
       '@langchain/langgraph':
         specifier: ^1.2.6
-        version: 1.2.6(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.1(zod@4.3.6))(zod@4.3.6)
+        version: 1.2.6(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.2(zod@4.3.6))(zod@4.3.6)
       '@langchain/langgraph-checkpoint':
         specifier: ^1.0.1
         version: 1.0.1(@langchain/core@libs+langchain-core)
@@ -2112,8 +2112,8 @@ importers:
         specifier: ^8
         version: 8.18.1
       '@upstash/redis':
-        specifier: ^1.36.2
-        version: 1.36.2
+        specifier: ^1.37.0
+        version: 1.37.0
       '@upstash/vector':
         specifier: ^1.2.2
         version: 1.2.2
@@ -2353,7 +2353,7 @@ importers:
         version: link:../../internal/eslint
       '@langchain/langgraph':
         specifier: ^1.0.0
-        version: 1.1.4(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.1(zod@4.3.6))(zod@4.3.6)
+        version: 1.1.4(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.2(zod@4.3.6))(zod@4.3.6)
       '@langchain/openai':
         specifier: workspace:*
         version: link:../providers/langchain-openai
@@ -4687,8 +4687,8 @@ packages:
     resolution: {integrity: sha512-ju7Y4WeF0B9uMkSPHJgmT6ouEfSwbe9M1uR/YOnYZjBpxJjH9qzxIkJg/kf8NycVDyFJ2/lscmJ1E1uPiDQVRQ==}
     hasBin: true
 
-  '@bytecodealliance/jco@1.17.5':
-    resolution: {integrity: sha512-fBclNYSg7vcjQYjrwX2+GYf1CAigyPgtv7WivxvVvH92gmORWQFuFA1pS1flijUp+6hV34eztTAsg6QKRPCMGQ==}
+  '@bytecodealliance/jco@1.17.6':
+    resolution: {integrity: sha512-2D/v9m+6cwVd/MYmv6rBgaiUv6vBJaSKWwbPh4ltAfxcbh4KYJioSsAiEyiwKSD2HlK0LZ45N0Kzfc9WOyWnVQ==}
     hasBin: true
 
   '@bytecodealliance/preview2-shim@0.17.8':
@@ -6835,6 +6835,12 @@ packages:
   '@napi-rs/wasm-runtime@1.1.1':
     resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
 
+  '@napi-rs/wasm-runtime@1.1.2':
+    resolution: {integrity: sha512-sNXv5oLJ7ob93xkZ1XnxisYhGYXfaG9f65/ZgYuAu3qt7b3NadcOEhLvx28hv31PgX8SZJRYrAIPQilQmFpLVw==}
+    peerDependencies:
+      '@emnapi/core': ^1.7.1
+      '@emnapi/runtime': ^1.7.1
+
   '@neon-rs/load@0.0.4':
     resolution: {integrity: sha512-kTPhdZyTQxB+2wpiRcFWrDcejc4JI6tkPuS7UZCG4l6Zvc5kU/gGQ/ozvHTh1XR5tS+UlfAfGuPajjzQjCiHCw==}
 
@@ -8831,8 +8837,8 @@ packages:
     peerDependencies:
       '@upstash/redis': ^1.34.3
 
-  '@upstash/redis@1.36.2':
-    resolution: {integrity: sha512-C0Yt8hc12vLaQYRG1fMci8iPrLtnTdbJG0HR5T8vKnvEP/1RdMMblsOJs5/jp0JXZJ1oSzMnQz4J9EVezNpI6A==}
+  '@upstash/redis@1.37.0':
+    resolution: {integrity: sha512-LqOJ3+XWPLSZ2rGSed5DYG3ixybxb8EhZu3yQqF7MdZX1wLBG/FRcI6xcUZXHy/SS7mmXWyadrud0HJHkOc+uw==}
 
   '@upstash/vector@1.2.2':
     resolution: {integrity: sha512-ptQ9xnxtKqmpNK52PCcHCszlPOLxIBfjsv7ty8RoF95pkjctS9rSjTQ3Pl9bx5VFbpDj+0dMXw88WLt6swDkgQ==}
@@ -8974,6 +8980,7 @@ packages:
   '@xmldom/xmldom@0.8.11':
     resolution: {integrity: sha512-cQzWCtO6C8TQiYl1ruKNn2U6Ao4o4WBBcbL61yJl84x+j5sOWWFU9X7DpND8XZG3daDppSsigMdfAIl2upQBRw==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -15879,6 +15886,10 @@ packages:
     resolution: {integrity: sha512-k1isifdbpNSFEHFJ1ZY4YDewv0IH9FR61lDetaRMD3j2ae3bIXGV+7c+LHCqtQGofSd8PIyV4X6+dHMAnSr60A==}
     engines: {node: '>=12'}
 
+  yauzl@3.3.0:
+    resolution: {integrity: sha512-PtGEvEP30p7sbIBJKUBjUnqgTVOyMURc4dLo9iNyAJnNIEz9pm88cCXF21w94Kg3k6RXkeZh5DHOGS0qEONvNQ==}
+    engines: {node: '>=12'}
+
   yn@3.1.1:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
@@ -15913,6 +15924,11 @@ packages:
     resolution: {integrity: sha512-pM/SU9d3YAggzi6MtR4h7ruuQlqKtad8e9S0fmxcMi+ueAK5Korys/aWcV9LIIHTVbj01NdzxcnXSN+O74ZIVA==}
     peerDependencies:
       zod: ^3.25 || ^4
+
+  zod-to-json-schema@3.25.2:
+    resolution: {integrity: sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==}
+    peerDependencies:
+      zod: ^3.25.28 || ^4
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
@@ -18429,12 +18445,12 @@ snapshots:
 
   '@bytecodealliance/componentize-js@0.19.3':
     dependencies:
-      '@bytecodealliance/jco': 1.17.5
+      '@bytecodealliance/jco': 1.17.6
       '@bytecodealliance/wizer': 10.0.0
       es-module-lexer: 1.7.0
       oxc-parser: 0.76.0
 
-  '@bytecodealliance/jco@1.17.5':
+  '@bytecodealliance/jco@1.17.6':
     dependencies:
       '@bytecodealliance/componentize-js': 0.19.3
       '@bytecodealliance/preview2-shim': 0.17.8
@@ -18446,12 +18462,15 @@ snapshots:
 
   '@bytecodealliance/preview2-shim@0.17.8': {}
 
-  '@bytecodealliance/weval@0.3.4':
+  '@bytecodealliance/weval@0.3.4(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)':
     dependencies:
-      '@napi-rs/lzma': 1.4.5
+      '@napi-rs/lzma': 1.4.5(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)
       decompress: 4.2.1
       decompress-tar: 4.1.1
       decompress-unzip: 4.0.1
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   '@bytecodealliance/wizer-darwin-arm64@10.0.0':
     optional: true
@@ -19229,18 +19248,18 @@ snapshots:
 
   '@fastify/busboy@3.2.0': {}
 
-  '@fastly/http-compute-js@1.1.5(@fastly/js-compute@3.39.2(typescript@5.8.3))':
+  '@fastly/http-compute-js@1.1.5(@fastly/js-compute@3.39.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)(typescript@5.8.3))':
     dependencies:
-      '@fastly/js-compute': 3.39.2(typescript@5.8.3)
+      '@fastly/js-compute': 3.39.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)(typescript@5.8.3)
       buffer: 6.0.3
       node-inspect-extracted: 1.1.0
       process: 0.11.10
       stream-browserify: 3.0.0
 
-  '@fastly/js-compute@3.39.2(typescript@5.8.3)':
+  '@fastly/js-compute@3.39.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)(typescript@5.8.3)':
     dependencies:
-      '@bytecodealliance/jco': 1.17.5
-      '@bytecodealliance/weval': 0.3.4
+      '@bytecodealliance/jco': 1.17.6
+      '@bytecodealliance/weval': 0.3.4(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)
       '@bytecodealliance/wizer': 7.0.5
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/trace-mapping': 0.3.31
@@ -19252,6 +19271,9 @@ snapshots:
       regexpu-core: 6.4.0
     optionalDependencies:
       typescript: 5.8.3
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   '@firebase/app-check-interop-types@0.3.3': {}
 
@@ -20129,7 +20151,7 @@ snapshots:
       - react
       - react-dom
 
-  '@langchain/langgraph@1.1.4(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.1(zod@4.3.6))(zod@4.3.6)':
+  '@langchain/langgraph@1.1.4(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.2(zod@4.3.6))(zod@4.3.6)':
     dependencies:
       '@langchain/core': link:libs/langchain-core
       '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@libs+langchain-core)
@@ -20138,12 +20160,12 @@ snapshots:
       uuid: 10.0.0
       zod: 4.3.6
     optionalDependencies:
-      zod-to-json-schema: 3.25.1(zod@4.3.6)
+      zod-to-json-schema: 3.25.2(zod@4.3.6)
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@langchain/langgraph@1.2.6(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.1(zod@4.3.6))(zod@4.3.6)':
+  '@langchain/langgraph@1.2.6(@langchain/core@libs+langchain-core)(react@19.0.0)(zod-to-json-schema@3.25.2(zod@4.3.6))(zod@4.3.6)':
     dependencies:
       '@langchain/core': link:libs/langchain-core
       '@langchain/langgraph-checkpoint': 1.0.1(@langchain/core@libs+langchain-core)
@@ -20152,7 +20174,7 @@ snapshots:
       uuid: 10.0.0
       zod: 4.3.6
     optionalDependencies:
-      zod-to-json-schema: 3.25.1(zod@4.3.6)
+      zod-to-json-schema: 3.25.2(zod@4.3.6)
     transitivePeerDependencies:
       - react
       - react-dom
@@ -20313,7 +20335,7 @@ snapshots:
     dependencies:
       ws: 8.20.0(bufferutil@4.1.0)
       zod: 4.3.6
-      zod-to-json-schema: 3.25.1(zod@4.3.6)
+      zod-to-json-schema: 3.25.2(zod@4.3.6)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -20534,9 +20556,12 @@ snapshots:
   '@napi-rs/lzma-linux-x64-musl@1.4.5':
     optional: true
 
-  '@napi-rs/lzma-wasm32-wasi@1.4.5':
+  '@napi-rs/lzma-wasm32-wasi@1.4.5(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.1.1
+      '@napi-rs/wasm-runtime': 1.1.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
     optional: true
 
   '@napi-rs/lzma-win32-arm64-msvc@1.4.5':
@@ -20548,7 +20573,7 @@ snapshots:
   '@napi-rs/lzma-win32-x64-msvc@1.4.5':
     optional: true
 
-  '@napi-rs/lzma@1.4.5':
+  '@napi-rs/lzma@1.4.5(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)':
     optionalDependencies:
       '@napi-rs/lzma-android-arm-eabi': 1.4.5
       '@napi-rs/lzma-android-arm64': 1.4.5
@@ -20563,10 +20588,13 @@ snapshots:
       '@napi-rs/lzma-linux-s390x-gnu': 1.4.5
       '@napi-rs/lzma-linux-x64-gnu': 1.4.5
       '@napi-rs/lzma-linux-x64-musl': 1.4.5
-      '@napi-rs/lzma-wasm32-wasi': 1.4.5
+      '@napi-rs/lzma-wasm32-wasi': 1.4.5(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)
       '@napi-rs/lzma-win32-arm64-msvc': 1.4.5
       '@napi-rs/lzma-win32-ia32-msvc': 1.4.5
       '@napi-rs/lzma-win32-x64-msvc': 1.4.5
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   '@napi-rs/wasm-runtime@0.2.12':
     dependencies:
@@ -20576,6 +20604,13 @@ snapshots:
     optional: true
 
   '@napi-rs/wasm-runtime@1.1.1':
+    dependencies:
+      '@emnapi/core': 1.8.1
+      '@emnapi/runtime': 1.8.1
+      '@tybys/wasm-util': 0.10.1
+    optional: true
+
+  '@napi-rs/wasm-runtime@1.1.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)':
     dependencies:
       '@emnapi/core': 1.8.1
       '@emnapi/runtime': 1.8.1
@@ -22565,14 +22600,14 @@ snapshots:
 
   '@upstash/core-analytics@0.0.10':
     dependencies:
-      '@upstash/redis': 1.36.2
+      '@upstash/redis': 1.37.0
 
-  '@upstash/ratelimit@2.0.8(@upstash/redis@1.36.2)':
+  '@upstash/ratelimit@2.0.8(@upstash/redis@1.37.0)':
     dependencies:
       '@upstash/core-analytics': 0.0.10
-      '@upstash/redis': 1.36.2
+      '@upstash/redis': 1.37.0
 
-  '@upstash/redis@1.36.2':
+  '@upstash/redis@1.37.0':
     dependencies:
       uncrypto: 0.1.3
 
@@ -22580,7 +22615,7 @@ snapshots:
 
   '@vercel/kv@3.0.0':
     dependencies:
-      '@upstash/redis': 1.36.2
+      '@upstash/redis': 1.37.0
 
   '@vercel/ncc@0.38.4': {}
 
@@ -23145,13 +23180,13 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  azion@3.1.2(@babel/core@7.29.0)(@fastly/js-compute@3.39.2(typescript@5.8.3))(@swc/core@1.15.18(@swc/helpers@0.5.18)):
+  azion@3.1.2(@babel/core@7.29.0)(@fastly/js-compute@3.39.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)(typescript@5.8.3))(@swc/core@1.15.18(@swc/helpers@0.5.18)):
     dependencies:
       '@babel/plugin-proposal-optional-chaining-assign': 7.27.1(@babel/core@7.29.0)
       '@babel/preset-env': 7.29.0(@babel/core@7.29.0)
       '@babel/preset-typescript': 7.28.5(@babel/core@7.29.0)
       '@edge-runtime/primitives': 3.1.1
-      '@fastly/http-compute-js': 1.1.5(@fastly/js-compute@3.39.2(typescript@5.8.3))
+      '@fastly/http-compute-js': 1.1.5(@fastly/js-compute@3.39.2(@emnapi/core@1.8.1)(@emnapi/runtime@1.8.1)(typescript@5.8.3))
       accepts: 1.3.8
       ajv: 8.18.0
       ajv-errors: 3.0.0(ajv@8.18.0)
@@ -24421,7 +24456,7 @@ snapshots:
       file-type: 3.9.0
       get-stream: 2.3.1
       pify: 2.3.0
-      yauzl: 3.2.1
+      yauzl: 3.3.0
 
   decompress@4.2.1:
     dependencies:
@@ -31233,6 +31268,11 @@ snapshots:
       buffer-crc32: 0.2.13
       pend: 1.2.0
 
+  yauzl@3.3.0:
+    dependencies:
+      buffer-crc32: 0.2.13
+      pend: 1.2.0
+
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
@@ -31261,6 +31301,10 @@ snapshots:
       zod: 3.25.76
 
   zod-to-json-schema@3.25.1(zod@4.3.6):
+    dependencies:
+      zod: 4.3.6
+
+  zod-to-json-schema@3.25.2(zod@4.3.6):
     dependencies:
       zod: 4.3.6
 
